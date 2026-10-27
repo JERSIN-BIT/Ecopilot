@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F9F6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Reciclaje"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el tipo y peso del material entregado"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- Label Tipo de Material -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Material:"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Desplegable para seleccionar material -->
+    <Spinner
+        android:id="@+id/spMaterialType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Label Peso -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad / Peso (kg):"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Campo para ingresar el peso -->
+    <EditText
+        android:id="@+id/etWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej. 2.5"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnSaveRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Transacción"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón Cancelar -->
+    <Button
+        android:id="@+id/btnCancelRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor="#666666"
+        android:padding="14dp"/>
+
+</LinearLayout>
